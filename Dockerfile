@@ -1,4 +1,4 @@
-FROM python:3.11-slim
+FROM python:3.12-slim
 
 # Hugging Face Spaces بيشغّل الحاوية بمستخدم عادي (UID 1000)
 RUN useradd -m -u 1000 user

@@ -15,6 +15,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY --chown=user . .
 
-EXPOSE 7860
+EXPOSE 15157
 
 CMD ["python", "app.py"]

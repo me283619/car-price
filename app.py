@@ -59,7 +59,7 @@ custom_css = """
 .result-box { border: 1px solid #3b82f6; border-radius: 12px; padding: 16px; }
 """
 
-with gr.Blocks(theme=gr.themes.Soft(), css=custom_css) as demo:
+with gr.Blocks() as demo:
     gr.Markdown(
         "# 🚗 نظام توقع أسعار السيارات\nتقدير فوري للسعر باستخدام نموذج **Random Forest** (بيانات سوق السيارات البريطاني).")
 
@@ -139,4 +139,4 @@ with gr.Blocks(theme=gr.themes.Soft(), css=custom_css) as demo:
 
 import os
 port=int(os.environ.get("PORT", 7860))
-demo.launch(server_name="0.0.0.0",server_port=port)
+demo.launch(server_name="0.0.0.0",server_port=port,theme=gr.themes.Soft(),css=custom_css)

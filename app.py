@@ -1,5 +1,6 @@
-#%%
+
 import gradio as gr
+import json
 import joblib
 import pandas as pd
 
@@ -11,16 +12,11 @@ scaler = bundle["scaler"]
 features = bundle["features"]
 
 # 2. قوائم الاختيارات للـ Dropdowns
-if "df" in globals():
-    models_list = sorted(df["model"].astype(str).str.strip().unique().tolist())
-    trans_list = sorted(
-        df["transmission"].astype(str).str.strip().unique().tolist()
-    )
-    fuel_list = sorted(df["fueltype"].astype(str).str.strip().unique().tolist())
-else:
-    models_list = ["Golf", "Polo", "Passat", "Tiguan", "Fiesta", "Focus", "Beetle"]
-    trans_list = ["Manual", "Automatic", "Semi-Auto"]
-    fuel_list = ["Petrol", "Diesel", "Hybrid", "Electric"]
+with open("options.json", encoding="utf-8") as f:
+    opts = json.load(f)
+models_list = opts["models"]
+trans_list = opts["transmissions"]
+fuel_list = opts["fuel_types"]
 
 
 # 3. دالة التنبؤ

@@ -533,7 +533,7 @@
      "metadata": {},
      "output_type": "display_data",
      "jetTransient": {
-      "display_id": null
+      "display_id": None
      }
     }
    ],
@@ -570,7 +570,7 @@
      "metadata": {},
      "output_type": "display_data",
      "jetTransient": {
-      "display_id": null
+      "display_id": None
      }
     }
    ],

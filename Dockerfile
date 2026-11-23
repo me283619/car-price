@@ -6,7 +6,7 @@ USER user
 
 ENV PATH="/home/user/.local/bin:$PATH" \
     GRADIO_SERVER_NAME=0.0.0.0 \
-    GRADIO_SERVER_PORT=7860
+    GRADIO_SERVER_PORT=15157
 
 WORKDIR /app
 

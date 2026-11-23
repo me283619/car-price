@@ -12,11 +12,9 @@ scaler = bundle["scaler"]
 features = bundle["features"]
 
 # 2. قوائم الاختيارات للـ Dropdowns
-with open("options.json", encoding="utf-8") as f:
-    opts = json.load(f)
-models_list = opts["models"]
-trans_list = opts["transmissions"]
-fuel_list = opts["fuel_types"]
+models_list = ["Golf", "Polo", "Passat", "Tiguan", "Fiesta", "Focus", "Beetle"]
+trans_list = ["Manual", "Automatic", "Semi-Auto"]
+fuel_list = ["Petrol", "Diesel", "Hybrid", "Electric"]
 
 
 # 3. دالة التنبؤ

@@ -6,7 +6,7 @@ USER user
 
 ENV PATH="/home/user/.local/bin:$PATH" \
     GRADIO_SERVER_NAME=0.0.0.0 \
-    GRADIO_SERVER_PORT=15157
+    GRADIO_SERVER_PORT=7860
 
 WORKDIR /app
 
@@ -15,6 +15,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY --chown=user . .
 
-EXPOSE 15157
+EXPOSE 7860
 
 CMD ["python", "app.py"]

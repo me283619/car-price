@@ -4,7 +4,7 @@
    "cell_type": "code",
    "id": "initial_id",
    "metadata": {
-    "collapsed": true,
+    "collapsed": True,
     "ExecuteTime": {
      "end_time": "2026-11-19T01:32:39.488655Z",
      "start_time": "2026-11-19T01:32:39.461775900Z"
